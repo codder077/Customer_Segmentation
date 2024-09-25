@@ -107,24 +107,7 @@ http://localhost:5000/predict
 
 ```
 
-## Run locally
 
-1. Check if the Dockerfile is available in the project directory
-2. Build the Docker image
-
-```
-
-docker build --build-arg AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> --build-arg AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY> --build-arg AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION> --build-arg MONGODB_URL=<MONGODB_URL> . 
-
-```
-
-3. Run the Docker image
-
-```
-
-docker run -d -p 5000:5000 <IMAGE_NAME>
-
-```
 
 ## Project Architecture -
 
@@ -134,9 +117,6 @@ docker run -d -p 5000:5000 <IMAGE_NAME>
 
 ![WhatsApp Image 2022-09-22 at 15 29 10](https://user-images.githubusercontent.com/71321529/192721926-de265f9b-f301-4943-ac7d-948bff7be9a0.jpeg)
 
-## Deployment Architecture -
-
-![deployment](https://user-images.githubusercontent.com/104005791/199660875-c8e63457-432a-44cb-8a95-800870f3da15.png)
 
 ## Models Used
 
@@ -161,8 +141,3 @@ From these above models after hyperparameter optimization we selected these two 
 
 **Custom Logger and Exceptions** are used in the Project for better debugging purposes.
 
-## Conclusion
-
-- This Project can be used in real-life by Users.
-
-Author - Hrisikesh Neogi
